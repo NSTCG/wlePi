@@ -3,6 +3,9 @@ WL.registerComponent('button', {
     hoverMaterial: {type: WL.Type.Material},
 }, {
     start: function() {
+        state=false;
+        statetext='off';
+
         this.mesh = this.buttonMeshObject.getComponent('mesh');
         this.defaultMaterial = this.mesh.material;
         this.returnPos = new Float32Array(3);
@@ -31,7 +34,7 @@ WL.registerComponent('button', {
         this.soundClick.play();
         this.buttonMeshObject.translate([0.0, -0.1, 0.0]);
         this.hapticFeedback(cursor.object, 1.0, 20);
-        fetch('/led/on').then(response => response.text()).then(data => console.log(data));
+        this.turnon();
         
     },
 
@@ -57,4 +60,10 @@ WL.registerComponent('button', {
             if(gamepad && gamepad.hapticActuators) gamepad.hapticActuators[0].pulse(strength, duration);
         }
     },
+    turnon:function(){
+        state!=state;
+        if(state)stateText='on';
+        else stateText='off';
+        fetch('http://localhost:3000/led'+ stateText ).then(response => response.text()).then(data => console.log(data));
+    }
 });
