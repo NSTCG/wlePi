@@ -64,6 +64,6 @@ WL.registerComponent('button', {
         state!=state;
         if(state)stateText='on';
         else stateText='off';
-        fetch('http://localhost:3000/led'+ stateText ).then(response => response.text()).then(data => console.log(data));
+        fetch('http://localhost:3000/led/'+ stateText ).then(response => response.text()).then(data => console.log(data));
     }
 });
