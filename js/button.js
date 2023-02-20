@@ -44,8 +44,8 @@ WL.registerComponent(
 			this.soundClick.play();
 			this.buttonMeshObject.translate([0.0, -0.1, 0.0]);
 			this.hapticFeedback(cursor.object, 1.0, 20);
-			//this.turnon();
-			console.log(cursor);
+			this.turnon();
+			//console.log(cursor);
 		},
 
 		onUp: function (_, cursor) {
