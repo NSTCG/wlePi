@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# introduce a 5-second delay
+sleep 5
+
 # change to the directory where the Git repository is located
 cd /home/nstcg/Desktop/SwitchAutomation/wlePi
 
