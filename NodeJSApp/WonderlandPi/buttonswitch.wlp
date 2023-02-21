@@ -22,7 +22,7 @@
                 {
                     "type": "wasd-controls",
                     "wasd-controls": {
-                        "headObject": "14"
+                        "headObject": "17"
                     }
                 }
             ]
@@ -1043,7 +1043,8 @@
                 {
                     "active": true,
                     "mesh": {
-                        "skin": "133"
+                        "skin": "133",
+                        "mesh": "47"
                     }
                 }
             ]
@@ -1331,7 +1332,8 @@
             "components": [
                 {
                     "mesh": {
-                        "skin": "166"
+                        "skin": "166",
+                        "mesh": "47"
                     }
                 }
             ]

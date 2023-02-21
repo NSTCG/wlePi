@@ -6,8 +6,9 @@ WL.registerComponent(
 	},
 	{
 		start: function () {
+			document.body.style.webkitTapHighlightColor = "transparent";
 			this.defaultUrl = "https://192.168.20.9:3000/led/";
-			remoteurl = this.defaultUrl;
+			remoteurl = "/led/";
 			state = false;
 			statetext = "off";
 
@@ -21,6 +22,7 @@ WL.registerComponent(
 			this.target.addUnHoverFunction(this.onUnHover.bind(this));
 			this.target.addDownFunction(this.onDown.bind(this));
 			this.target.addUpFunction(this.onUp.bind(this));
+			//this.target.addClickFunction(this.onDown.bind(this));
 			this.soundClick = this.object.addComponent("howler-audio-source", {
 				src: "sfx/click.wav",
 				spatial: true,
@@ -72,6 +74,7 @@ WL.registerComponent(
 			}
 		},
 		turnon: function () {
+			console.log("switching state");
 			state = !state;
 			if (state) stateText = "on";
 			else stateText = "off";
