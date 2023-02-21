@@ -10,7 +10,7 @@ const LED = new Gpio(13, "out");
 app.get("/led/:status", (req, res) => {
 	const status = req.params.status;
 	if (status == "on") {
-		//LED.writeSync(1);
+		LED.writeSync(1);
 		res.send("LED turned on");
 	} else if (status === "off") {
 		LED.writeSync(0);
