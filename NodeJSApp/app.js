@@ -31,6 +31,16 @@ app.get("/home", (req, res) => {
 	res.sendFile(__dirname + "/index.html");
 });
 
-app.listen(3000, () => {
-	console.log("app listening on port 3000");
+
+
+const https = require('https');
+const fs = require('fs');
+
+const options = {
+  key: fs.readFileSync('server.key'),
+  cert: fs.readFileSync('server.cert')
+};
+
+https.createServer(options, app).listen(3000, () => {
+  console.log('Server started on port 3000');
 });
