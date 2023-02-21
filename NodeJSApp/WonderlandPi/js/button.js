@@ -6,7 +6,7 @@ WL.registerComponent(
 	},
 	{
 		start: function () {
-			this.defaultUrl = "http://192.168.20.9:3000/led/";
+			this.defaultUrl = "https://192.168.20.9:3000/led/";
 			remoteurl = this.defaultUrl;
 			state = false;
 			statetext = "off";
