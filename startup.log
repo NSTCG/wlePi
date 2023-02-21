@@ -1,9 +1,0 @@
-Fetching origin
-fatal: unable to access 'https://github.com/NSTCG/wlePi.git/': Could not resolve host: github.com
-error: Could not fetch origin
-
-up to date in 1s
-
-7 packages are looking for funding
-  run `npm fund` for details
-Server started on port 3000
