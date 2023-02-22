@@ -27,78 +27,6 @@
                 }
             ]
         },
-        "15": {
-            "name": "FloorPlane",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "7",
-                        "material": "20"
-                    },
-                    "active": true
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                4.0,
-                                0.05,
-                                4.0
-                            ]
-                        },
-                        "groups": 4
-                    },
-                    "active": false
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                1.1920928955078125e-7
-            ],
-            "rotation": [
-                -0.7072496,
-                0.0,
-                0.0,
-                0.7069638
-            ],
-            "scaling": [
-                4.0,
-                4.0,
-                4.0
-            ]
-        },
-        "16": {
-            "name": "Cube",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                2.9802322387695313e-8,
-                0.4999999,
-                5.960464477539065e-8
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scaling": [
-                0.5,
-                0.5,
-                0.5
-            ]
-        },
         "17": {
             "name": "NonVrCamera",
             "parent": "205",
@@ -264,62 +192,6 @@
                 1.0,
                 1.0,
                 1.0
-            ]
-        },
-        "24": {
-            "name": "Cone",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "10",
-                        "material": "25"
-                    }
-                }
-            ],
-            "translation": [
-                1.5,
-                1.0,
-                -1.4901161193847656e-8
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scaling": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
-        "27": {
-            "name": "Sphere",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                0.4999999,
-                0.75,
-                -1.25
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scaling": [
-                0.75,
-                0.75,
-                0.75
             ]
         },
         "53": {
@@ -2523,6 +2395,17 @@
                     "local-floor": true
                 }
             }
+        },
+        "rendering": {
+            "clearColor": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        "ar": {
+            "framework": "webxr"
         }
     },
     "animations": {},
