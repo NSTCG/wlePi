@@ -10,6 +10,10 @@ cd /home/nstcg/Desktop/SwitchAutomation/wlePi
 git fetch --all --force
 
 
+# merge changes from the remote repository
+git merge origin/main --no-edit
+
+
 # change to the directory where the Node.js application is located
 cd /home/nstcg/Desktop/SwitchAutomation/wlePi/NodeJSApp
 
